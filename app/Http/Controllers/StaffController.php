@@ -42,7 +42,7 @@ class StaffController extends Controller
         return view("backend.staff.update",compact("staff"));
     }
 
-    public function update(Request $request)
+    public function update(UpdateStaffRequest $request)
     {
 
 

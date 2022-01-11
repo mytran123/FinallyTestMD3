@@ -44,14 +44,14 @@
                     <label for="name">Tên</label>
                     <input style="width: 500px" type="text" class="form-control" id="name" name="name" value="{{old('name')}}" placeholder="Nhập tên">
                     @error('name')
-                    <p style="color: red" >{{$message}}</p>
+                    <p style="color: red; width: 500px" >{{$message}}</p>
                     @enderror
                 </div>
                 <div class="form-group col-md-6">
                     <label for="date">Ngày sinh</label>
                     <input style="width: 500px" type="date" class="form-control" id="date" name="birthday" value="{{old('birthday')}}" placeholder="Nhập ngày sinh">
                     @error('birthday')
-                    <p style="color: red">{{$message}}</p>
+                    <p style="color: red; width: 500px">{{$message}}</p>
                     @enderror
                 </div>
                 <div class="form-group col-md-6">
@@ -68,7 +68,7 @@
                     <label for="inputName">Số điện thoại</label>
                     <input style="width: 500px" type="text" class="form-control" id="inputName" name="phone" value="{{old('phone')}}" placeholder="Nhập số điện thoại">
                     @error('phone')
-                    <p style="color: red">{{$message}}</p>
+                    <p style="color: red; width: 500px">{{$message}}</p>
                     @enderror
                 </div>
                 <br>
@@ -76,21 +76,21 @@
                     <label for="inputEmail4">Số CMND</label>
                     <input style="width: 500px" type="text" class="form-control" id="inputEmail4" name="cmnd" value="{{old('cmnd')}}" placeholder="Nhập số CMND">
                     @error('cmnd')
-                    <p style="color: red">{{$message}}</p>
+                    <p style="color: red; width: 500px">{{$message}}</p>
                     @enderror
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword4">Email</label>
                     <input style="width: 500px" type="text" class="form-control" id="inputPassword4" name="email" value="{{old('email')}}" placeholder="Nhập email">
                     @error('email')
-                    <p style="color: red">{{$message}}</p>
+                    <p style="color: red; width: 500px">{{$message}}</p>
                     @enderror
                 </div>
                 <div class="form-group col-md-6">
                     <label for="exampleFormControlTextarea1">Địa chỉ</label>
                     <textarea style="width: 500px" name="address" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Nhập địa chỉ" value="{{old('address')}}"></textarea>
                     @error('address')
-                    <p style="color: red">{{$message}}</p>
+                    <p style="color: red; width: 500px">{{$message}}</p>
                     @enderror
                 </div>
                 <div style="padding-left: 120px">
@@ -101,6 +101,7 @@
         </div>
     </form>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

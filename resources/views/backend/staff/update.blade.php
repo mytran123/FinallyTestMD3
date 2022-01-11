@@ -17,7 +17,7 @@
 <div class="card mb-4 container mt-5" style="height: 550px">
     <div class="card-header">
         <i class="fas fa-table me-1"></i>
-        Thêm mới nhân viên
+        Cập nhật nhân viên
     </div>
     <form action="{{route('staffs.update')}}" method="post">
         @csrf
@@ -43,14 +43,14 @@
                     <label for="inputPassword4">Tên</label>
                     <input style="width: 500px" type="text" class="form-control" id="inputPassword4" name="name" value="{{$staff->name}}">
                     @error('name')
-                    <p style="color: red" >{{$message}}</p>
+                    <p style="color: red; width: 500px" >{{$message}}</p>
                     @enderror
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword4">Ngày sinh</label>
                     <input style="width: 500px" type="text" class="form-control" id="inputPassword4" name="birthday" value="{{$staff->birthday}}">
                     @error('birthday')
-                    <p style="color: red" >{{$message}}</p>
+                    <p style="color: red; width: 500px" >{{$message}}</p>
                     @enderror
                 </div>
                 <div class="form-group col-md-6">
@@ -67,7 +67,7 @@
                     <label for="inputName">Số điện thoại</label>
                     <input style="width: 500px" type="text" class="form-control" id="inputName" name="phone" value="{{$staff->phone}}">
                     @error('phone')
-                    <p style="color: red" >{{$message}}</p>
+                    <p style="color: red; width: 500px" >{{$message}}</p>
                     @enderror
                 </div>
                 <br>
@@ -75,21 +75,21 @@
                     <label for="inputEmail4">Số CMND</label>
                     <input style="width: 500px" type="text" class="form-control" id="inputEmail4" name="cmnd" value="{{$staff->cmnd}}">
                     @error('cmnd')
-                    <p style="color: red" >{{$message}}</p>
+                    <p style="color: red; width: 500px" >{{$message}}</p>
                     @enderror
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword4">Email</label>
                     <input style="width: 500px" type="text" class="form-control" id="inputPassword4" name="email" value="{{$staff->email}}">
                     @error('email')
-                    <p style="color: red" >{{$message}}</p>
+                    <p style="color: red; width: 500px" >{{$message}}</p>
                     @enderror
                 </div>
                 <div class="form-group col-md-6">
                     <label for="exampleFormControlTextarea1">Địa chỉ</label>
                     <input style="width: 500px" name="address" class="form-control" id="exampleFormControlTextarea1" rows="3" value="{{$staff->address}}"></input>
                     @error('address')
-                    <p style="color: red" >{{$message}}</p>
+                    <p style="color: red; width: 500px" >{{$message}}</p>
                     @enderror
                 </div>
                 <div style="padding-left: 120px">

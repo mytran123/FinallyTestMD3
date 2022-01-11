@@ -47,7 +47,7 @@ class UpdateStaffRequest extends FormRequest
             'phone.min' => 'Số điện thoại không được nhỏ hơn 10',
             'phone.max' => 'Số điện thoại không được lớn hơn 11',
             'cmnd.required' => 'Số CMND không được để trống',
-            'cmnd.max' => 'Số CMND không được để trống',
+            'cmnd.max' => 'Số CMND không lớn hơn 12',
             'email.required' => 'Email không được để trống',
             'address.required' => 'Địa chỉ không được để trống'
         ];

@@ -17,26 +17,27 @@
 
 {{--<a href="{{route('staffs.create')}}" class="btn btn-success">Thêm mới</a>--}}
 
-<div class="row">
-    <div class="col">
-        <button class="btn btn-success mb-3">
-            <a style="color: white; text-decoration: none" href="{{route('staffs.create')}}">Thêm mới</a>
-        </button>
-    </div>
-    <form action="{{route('staffs.search')}}" method="get">
-        <div class="input-group mb-2 col" style="width: 500px">
 
-            <input style="height: 42px" type="text" name="keystaff" class="form-control" id="searchStaff">
-            <div class="input-group-prepend">
-                <button type="submit" class="btn btn-success" style="height: 42px">
-                    <i class="fas fa fa-search"></i>
-                </button>
-            </div>
+
+<div class="card mb-4 container mt-5">
+    <div class="row" style="padding-top: 20px">
+        <div class="col">
+            <button class="btn btn-success mb-3">
+                <a style="color: white; text-decoration: none" href="{{route('staffs.create')}}">Thêm mới</a>
+            </button>
         </div>
-    </form>
-</div>
+        <form action="{{route('staffs.search')}}" method="get">
+            <div class="input-group mb-2 col" style="width: 500px">
 
-<div class="card mb-4">
+                <input style="height: 42px" type="text" name="keystaff" class="form-control" id="searchStaff">
+                <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-success" style="height: 42px">
+                        <i class="fas fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
     <div class="card-header">
         <i class="fas fa-table me-1"></i>
         Danh sách nhân viên
@@ -54,9 +55,9 @@
             </tr>
             </thead>
             <tbody id="list-staff">
-            @foreach($staffs as $staff)
+            @foreach($staffs as $key => $staff)
                 <tr>
-                    <td>{{$staff->id}}</td>
+                    <td>{{$key+1}}</td>
                     <td>{{$staff->group}}</td>
                     <td>{{$staff->name}}</td>
                     <td>{{$staff->gender}}</td>
